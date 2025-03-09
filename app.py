@@ -6,6 +6,12 @@ from dotenv import load_dotenv
 
 # Load environment variables from .env file
 load_dotenv()
+# Meta Description (injecting HTML)
+st.markdown("""
+    <head>
+        <meta name="description" content="An autonomous reasoning chatbot Created by Hassan RJ, Full Stack Web Developer and GIAIC Student Leader.">
+    </head>
+    """, unsafe_allow_html=True)
 
 # Add this near the top of your app.py file
 st.set_page_config(
