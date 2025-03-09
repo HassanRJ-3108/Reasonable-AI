@@ -7,13 +7,26 @@ from dotenv import load_dotenv
 # Load environment variables from .env file
 load_dotenv()
 
-# Configure the page
+# Set page configuration & SEO
 st.set_page_config(
-    page_title="Reasonable AI",
+    page_title="Reasonable AI - Autonomous Reasoning Chatbot",
     page_icon="🧠",
-    layout="wide"
+    layout="wide",
+    initial_sidebar_state="expanded",
+    menu_items={
+        'Get Help': 'https://github.com/HassanRJ-3108/Reasonable-AI/issues',
+        'Report a bug': 'https://github.com/HassanRJ-3108/Reasonable-AI/issues/new',
+        'About': """
+        # Reasonable AI
+        
+        An autonomous reasoning chatbot powered by Google's Gemini models.
+        
+        Created by Hassan RJ, Full Stack Web Developer and GIAIC Student Leader.
+        
+        Version: 1.0.0
+        """
+    }
 )
-
 # Custom CSS for styling
 st.markdown("""
 <style>
