@@ -7,15 +7,15 @@ from dotenv import load_dotenv
 # Load environment variables from .env file
 load_dotenv()
 
-# Set page configuration & SEO
+# Add this near the top of your app.py file
 st.set_page_config(
     page_title="Reasonable AI - Autonomous Reasoning Chatbot",
     page_icon="🧠",
     layout="wide",
     initial_sidebar_state="expanded",
     menu_items={
-        'Get Help': 'https://github.com/HassanRJ-3108/Reasonable-AI/issues',
-        'Report a bug': 'https://github.com/HassanRJ-3108/Reasonable-AI/issues/new',
+        'Get Help': 'https://github.com/HassanRJ-3108/reasonable-ai/issues',
+        'Report a bug': 'https://github.com/HassanRJ-3108/reasonable-ai/issues/new',
         'About': """
         # Reasonable AI
         
@@ -27,6 +27,7 @@ st.set_page_config(
         """
     }
 )
+
 # Custom CSS for styling
 st.markdown("""
 <style>
