@@ -6,22 +6,16 @@ from dotenv import load_dotenv
 
 # Load environment variables from .env file
 load_dotenv()
-# Meta Description (injecting HTML)
-st.markdown("""
-    <head>
-        <meta name="description" content="An autonomous reasoning chatbot Created by Hassan RJ, Full Stack Web Developer and GIAIC Student Leader.">
-    </head>
-    """, unsafe_allow_html=True)
 
-# Add this near the top of your app.py file
+# Set page configuration & SEO
 st.set_page_config(
     page_title="Reasonable AI - Autonomous Reasoning Chatbot",
     page_icon="🧠",
     layout="wide",
     initial_sidebar_state="expanded",
     menu_items={
-        'Get Help': 'https://github.com/HassanRJ-3108/reasonable-ai/issues',
-        'Report a bug': 'https://github.com/HassanRJ-3108/reasonable-ai/issues/new',
+        'Get Help': 'https://github.com/HassanRJ-3108/Reasonable-AI/issues',
+        'Report a bug': 'https://github.com/HassanRJ-3108/Reasonable-AI/issues/new',
         'About': """
         # Reasonable AI
         
@@ -33,7 +27,6 @@ st.set_page_config(
         """
     }
 )
-
 # Custom CSS for styling
 st.markdown("""
 <style>
