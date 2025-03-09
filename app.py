@@ -113,7 +113,6 @@ with st.sidebar:
     # Model selection
     model_options = {
         "gemini-2.0-flash": "Gemini 2.0 Flash (Fast)",
-        "gemini-2.0-pro": "Gemini 2.0 Pro (Balanced)",
         "gemini-1.5-flash": "Gemini 1.5 Flash (Legacy)"
     }
     selected_model = st.selectbox(
