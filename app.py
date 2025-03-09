@@ -27,6 +27,11 @@ st.set_page_config(
         """
     }
 )
+st.markdown("""
+    <head>
+        <meta name="description" content="Learn AI concepts in a simple and understandable way with Reasonable AI. Perfect for beginners and developers. Explore clear explanations, examples, and tutorials.">
+    </head>
+    """, unsafe_allow_html=True)
 # Custom CSS for styling
 st.markdown("""
 <style>
